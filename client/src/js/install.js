@@ -1,5 +1,5 @@
 const butInstall = document.getElementById('buttonInstall');
-let deferredPrompt;  // to save the beforeinstallprompt event
+let deferredPrompt; 
 
 
 window.addEventListener('beforeinstallprompt', (event) => {
@@ -15,7 +15,7 @@ butInstall.addEventListener('click', async () => {
 
     promptEvent.prompt();
 
-    // Reset the deferred prompt variable, it can only be used once.
+    
     window.deferredPrompt = null;
 
     butInstall.classList.toggle('hidden', true);
